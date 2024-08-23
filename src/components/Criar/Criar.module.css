@@ -1,0 +1,169 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.containerCriar {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+    background-color: #ADD8E6;
+}
+
+.wrapCriar {
+    width: 390px;
+    background-color: #6290a0;
+    border-radius: 1rem;
+
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
+    box-shadow: 0 1rem 1.5rem 0px #304850;
+}
+
+.criarForm {
+   width: 100%; 
+}
+
+.CriarFormTitle {
+    display: block;
+    font-size: 1.5rem;
+    color: azure;
+
+    line-height: 1.2;
+    text-align: center;
+}
+
+.wrapInput {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #e2dfdf;
+    margin-top: 2rem;
+}
+
+input {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.2;
+    border: none;
+    display: block;
+
+    width: 100%;
+    height: 2.2rem;
+    background-color: transparent;
+    padding: 0 5px;
+}
+
+.focusInput {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    transition: all 0.3s ease;
+    pointer-events: none;
+    color: #adadad;
+    z-index: 1; 
+}
+
+.focusInput::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background: linear-gradient(to right, #6290a0, #496078, #2c3e50);
+    transition: width 0.3s ease; 
+}
+
+.focusInput::after {
+    content: attr(data-placeholder);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    padding-left: 5px;
+    font-size: 1rem;
+    color: #e2dfdf;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+}
+
+input:focus{
+    outline: 0;
+}
+
+input:focus + .focusInput::after,
+input:not(:placeholder-shown) + .focusInput::after {
+    top: -1.5rem; 
+    font-size: 0.75rem; 
+}
+
+input:focus + .focusInput::before,
+input:not(:placeholder-shown) + .focusInput::before {
+    width: 100%;
+}
+
+input:focus + .focusInput::before {
+    width: 100%; 
+}
+
+.containerCriarFormBtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.CriarFormBtn {
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+    color: #e2dfdf;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #44788a, #496078, #2c3e50);
+}
+
+.criarFormBtn:hover {
+    cursor: pointer;
+}
+
+.textCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.txt1 {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.txt2 {
+    font-size: 1rem;
+    color: #030e5e;
+    line-height: 1.5;
+    text-decoration: none;
+}

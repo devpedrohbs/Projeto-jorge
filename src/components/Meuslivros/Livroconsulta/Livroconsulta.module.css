@@ -1,0 +1,75 @@
+/* Livroconsulta.module.css */
+
+.container {
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column; /* Faz o layout ser vertical */
+    gap: 1rem;
+    width: 100%;
+    max-width: 35rem;
+    background-color: #080808;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+}
+
+.line1, .line2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tiitleline1, .progress {
+    flex: 1;
+}
+
+.imgline1, .rating {
+    flex: 1;
+    text-align: right;
+}
+
+.imgline1 img {
+    border-radius: 0.5rem;
+    border: 3px solid black;
+    width: 10rem;
+    height: 15rem;
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.progressBar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 1rem;
+    width: 70%; /* Ajuste a largura conforme necessário para representar o progresso */
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+}
+
+.progressText {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.rating {
+    font-size: 1.5rem;
+    color: #ffd700; /* Cor dourada para a nota */
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Adicione um estilo de separador opcional se desejar */
+.separator {
+    border-top: 1px solid #ffffff; /* Linha de separação sutil */
+    margin: 0.5rem 0;
+}

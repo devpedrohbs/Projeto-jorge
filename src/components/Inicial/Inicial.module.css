@@ -1,0 +1,13 @@
+.container{
+    background-color: #1f2527;
+    /* background-color: #f1e8dc; */
+    height: 100vh;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap; 
+    margin-top: 2rem;
+}
